@@ -16,6 +16,7 @@ canvas = tk.Tk()
 canvas.geometry("1400x1400")
 canvas.title("News App In Python")
 label = tk.Label(canvas, font = 28, justify = "left",relief="solid",wraplength="1800")
-label.pack(pady = 5)
+label.grid(padx=200,pady=10)
+
 fetchNews()
 canvas.mainloop()
